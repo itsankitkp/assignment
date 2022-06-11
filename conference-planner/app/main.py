@@ -32,3 +32,4 @@ def entrypoint(file_path: str) -> None:
             print(event)
         data = planner.get_conference_data()
         track += 1
+        print()

@@ -23,10 +23,10 @@ class Specs:
 
         self.name = conf_data[KEYWORD.NAME]
         self.duration = conf_data[KEYWORD.DURATION]
-        
+
         if self.duration < 5:
-            raise ValueError('Duration less than 5 is not supported')
-        
+            raise ValueError("Duration less than 5 is not supported")
+
         self.is_networking = conf_data[KEYWORD.IS_NETWORKING]
 
     def is_networking_track(self) -> bool:
