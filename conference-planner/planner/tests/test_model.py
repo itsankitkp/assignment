@@ -10,6 +10,13 @@ class TestConferencePlannerModel:
         ]
         with pytest.raises(Exception):
             _ = ConferenceInfo(conference_json_data)
+            
+    def test_model_validator_less_duration(self):
+        conference_json_data = [
+            {"Name": "Overdoing it in Python", "Duration": 4, "isNetworking": False}
+        ]
+        with pytest.raises(Exception):
+            _ = ConferenceInfo(conference_json_data)
 
     def test_model_validator_wrong_type(self):
         conference_json_data = [
