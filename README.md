@@ -140,6 +140,7 @@ If test fails then these environment are manually needed to be cleaned up.
 <ul>
 <li> Pytest </li>
 <li> Code Analyzer </li>
+<li> Code Scanner </li>
 </ul>
 
 </ol>
