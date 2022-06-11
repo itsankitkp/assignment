@@ -1,0 +1,132 @@
+[
+    {
+        "Name": "Writing Fast Tests Against Enterprise Rails",
+        "Duration": 55,
+        "isNetworking": false
+    },
+    {
+        "Name": "Overdoing it in Python",
+        "Duration": 50,
+        "isNetworking": false
+    },
+    {
+        "Name": "Lua for the Masses",
+        "Duration": 25,
+        "isNetworking": false
+    },
+    {
+        "Name": "Ruby Errors from Mismatched Gem Versions",
+        "Duration": 55,
+        "isNetworking": false
+    },
+    {
+        "Name": "Common Ruby Errors",
+        "Duration": 15,
+        "isNetworking": false
+    },
+    {
+        "Name": "Rails for Python Developers lightning Communicating Over Distance",
+        "Duration": 90,
+        "isNetworking": false
+    },
+    {
+        "Name": "Accounting-Driven Development",
+        "Duration": 25,
+        "isNetworking": false
+    },
+    {
+        "Name": "Woah",
+        "Duration": 45,
+        "isNetworking": false
+    },
+    {
+        "Name": "Sit Down and Write",
+        "Duration": 5,
+        "isNetworking": false
+    },
+    {
+        "Name": "Pair Programming vs Noise",
+        "Duration": 45,
+        "isNetworking": false
+    },    
+    {
+        "Name": "Rails Magic",
+        "Duration": 60,
+        "isNetworking": false
+    },
+    {
+        "Name": "User Interface CSS in Rails Apps 2",
+        "Duration": 15,
+        "isNetworking": false
+    },
+    {
+        "Name": "Ruby on Rails: Why We Should Move On",
+        "Duration": 60,
+        "isNetworking": false
+    },
+    {
+        "Name": "Clojure Ate Scala (on my project)",
+        "Duration": 45,
+        "isNetworking": false
+    },
+    {
+        "Name": "Programming in the Boondocks of Seattle",
+        "Duration": 30,
+        "isNetworking": false
+    },
+    {
+        "Name": "A World Without HackerNews 2",
+        "Duration": 10,
+        "isNetworking": false
+    },
+    {
+        "Name": "Ruby vs. Clojure for Back-End Development",
+        "Duration": 30,
+        "isNetworking": false
+    },
+    {
+        "Name": "Ruby on Rails Legacy App Maintenance",
+        "Duration": 60,
+        "isNetworking": false
+    },
+    {
+        "Name": "A World Without HackerNews",
+        "Duration": 30,
+        "isNetworking": false
+    },
+    {
+        "Name": "User Interface CSS in Rails Apps",
+        "Duration": 30,
+        "isNetworking": false
+    },
+    {
+        "Name": "Networking Event: IP",
+        "Duration": 60,
+        "isNetworking": true
+    },
+    {
+        "Name": "Networking Event: TCP",
+        "Duration": 60,
+        "isNetworking": true
+    },
+    {
+        "Name": "Ruby on Rails Legacy App Maintenance 2",
+        "Duration": 5,
+        "isNetworking": false
+    },
+    {
+        "Name": "Programming in the Boondocks of Seattle 2",
+        "Duration": 20,
+        "isNetworking": false
+    },
+    {
+        "Name": "Ruby vs. Clojure for Back-End Development 2",
+        "Duration": 5,
+        "isNetworking": false
+    },
+    {
+        "Name": "Ruby on Rails Legacy App Maintenance 2",
+        "Duration": 35,
+        "isNetworking": false
+    }
+]
