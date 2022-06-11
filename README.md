@@ -2,6 +2,7 @@
 
 This repo contains a python script for solution of problem #3.
 Following conditions are followed:
+
 • The conference has multiple tracks each of which has a morning and afternoon
 session.
 • Each session contains multiple talks.
