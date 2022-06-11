@@ -20,16 +20,16 @@ def entrypoint(file_path: str) -> None:
     conference_json_data = json.loads(file_object.read())
     conference_information = ConferenceInfo(conference_json_data)
     data = conference_information.data
-    track=1
+    track = 1
     while len(data) != 0:
-        print(f'Track {track}')
-        print('-------------------------------------')
+        print(f"Track {track}")
+        print("-------------------------------------")
         planner = ConferencePlanner(conference_information=data)
         planned_events = planner.get_plan()
-        for event in planned_events:
+        for event in planned_events.plan:
             print(event)
         data = planner.get_conference_data()
-        track+=1
+        track += 1
     # final_plan: Plan =
 
     # print(final_plan)
