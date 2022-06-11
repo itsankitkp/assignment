@@ -34,3 +34,19 @@ pip install -r requirement.txt
 2.
 </p>
 </details>
+
+
+<details><summary>Running tests</summary>
+<p>
+
+1. Ensure that you are in virtual environment
+2. Run all tests
+```
+pytest
+```
+3. Get coverage report
+```
+pytest --cov=conference-planner
+```
+</p>
+</details>

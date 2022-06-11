@@ -13,7 +13,7 @@ class Specs:
             if key not in conf_data.keys():
                 raise Exception(f" Required key {key} is missing") # This should be custom business exeception
             if not isinstance(conf_data[key], key_type):
-                raise Exception(f"Type of {key} should be {key_type} not {type(conf_data[key])}")
+                raise TypeError(f"Type of {key} should be {key_type} not {type(conf_data[key])}")
         
         self.name = conf_data[KEYWORD.NAME]
         self.duration = conf_data[KEYWORD.DURATION]
