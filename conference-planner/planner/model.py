@@ -7,14 +7,18 @@ from planner.const import KEYWORD, SUPPORTED_KEYS
 class Specs:
     def __init__(self, conf_data: dict):
         # validate data
-        if not isinstance(conf_data,dict):
+        if not isinstance(conf_data, dict):
             raise TypeError("Conference data should be dict")
         for key, key_type in SUPPORTED_KEYS:
             if key not in conf_data.keys():
-                raise Exception(f" Required key {key} is missing") # This should be custom business exeception
+                raise Exception(
+                    f" Required key {key} is missing"
+                )  # This should be custom business exeception
             if not isinstance(conf_data[key], key_type):
-                raise TypeError(f"Type of {key} should be {key_type} not {type(conf_data[key])}")
-        
+                raise TypeError(
+                    f"Type of {key} should be {key_type} not {type(conf_data[key])}"
+                )
+
         self.name = conf_data[KEYWORD.NAME]
         self.duration = conf_data[KEYWORD.DURATION]
         self.is_networking = conf_data[KEYWORD.IS_NETWORKING]

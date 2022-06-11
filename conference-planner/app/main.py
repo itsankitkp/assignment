@@ -1,5 +1,6 @@
 import json
-from planner.model import Plan, ConferenceInfo
+from os import path
+from planner.model import ConferenceInfo
 from planner.generator import ConferencePlanner
 
 
@@ -12,10 +13,10 @@ def entrypoint(file_path: str) -> None:
     Returns:
         None
     """
-    try:
-        file_object = open(file_path)
-    except IOError as e:
-        print(f"Unable to read file due to {e}")
+    if not path.isfile(file_path):
+        raise Exception("Given file path is not valid")
+
+    file_object = open(file_path)  # this will raise IO error if file is not found
 
     conference_json_data = json.loads(file_object.read())
     conference_information = ConferenceInfo(conference_json_data)
@@ -30,6 +31,3 @@ def entrypoint(file_path: str) -> None:
             print(event)
         data = planner.get_conference_data()
         track += 1
-    # final_plan: Plan =
-
-    # print(final_plan)
