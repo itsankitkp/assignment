@@ -4,7 +4,7 @@ import sys
 from app.main import entrypoint
 
 
-def main():
+def main() -> None:
     if len(sys.argv) != 2:
         raise Exception(f"File path containing conference details are not specified")
 
