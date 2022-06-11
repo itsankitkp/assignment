@@ -130,3 +130,19 @@ Note: #3 and #4 create temperatory virtual environment. <br>
 If test fails then these environment are manually needed to be cleaned up.
 </p>
 </details>
+
+<details><summary>Running CI workflows</summary>
+<p>
+<ol>
+<li> Create a pull request </li>
+<li> Github workflow should run CI workflows namely </li>
+
+<ul>
+<li> Pytest </li>
+<li> Code Analyzer </li>
+<li> Code Scanner </li>
+</ul>
+
+</ol>
+
+</p>

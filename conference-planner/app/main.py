@@ -19,7 +19,7 @@ def entrypoint(file_path: str) -> None:
 
     file_object = open(file_path)  # this will raise IO error if file is not found
 
-    conference_json_data = json.loads(file_object.read())
+    conference_json_data: dict = json.loads(file_object.read())
     conference_information = ConferenceInfo(conference_json_data)
     data = conference_information.data
     track = 1
