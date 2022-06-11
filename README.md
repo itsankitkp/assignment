@@ -1,4 +1,4 @@
-# assignment
+# Assignment Project for allocating Conference tracks
 
 This repo contains a python script for solution of problem #3.<br>
 The following conditions are followed:
@@ -17,20 +17,20 @@ event.</li>
 
 <p>
 Note: Sample out in the given in the pdf didn't align with all given condition, namely
-networking event were scheduled post closing time (5PM). Such diversion from given condition is not 
+networking event were scheduled post closing time (5PM). Such diversion from given condition is not
 implemented and condition (as mentioned) is strictly followed.
 </p>
 <details><summary>Installing dependencies (Debian/Ubuntu or equivalent)</summary>
 <p>
 
-1. Download and install python3 from https://www.python.org/downloads/ .
+1. Download and install python3 from <https://www.python.org/downloads/> .
 2. Create a virtual environment.
 
 ```
 python3 -m venv venv
 ```
-Note: You may need to install `python3-venv` in some distros
 
+Note: You may need to install `python3-venv` in some distros
 
 3. Activate virtual environment.
 
@@ -43,44 +43,52 @@ source venv/bin/activate
 ```
 pip install -r requirement.txt
 ```
+
 </p>
 </details>
 
 <details><summary>Running script</summary>
 <p>
-1. Install dependencies as given above.
-2.
+1. Ensure that you are in virtualenv
+2. Run following command:
+
+```
+python3 generate_plan.py <path_to_json_data>
+```
+
 </p>
+</details>
 
 <details><summary>Running sample data</summary>
 <p>
-1. Install dependencies as given above.
-2.
+1. Ensure that you are in virtualenv
+2. Run following command:
+
+```
+python3 generate_plan.py sample_data/sample1.json
+```
+
+Choose different sample files: sample1.jsom, sample2.json, sample3.json
+or create your own using these files.
+
 </p>
 </details>
-</details>
-
-
-
-<details><summary>Set up development machine</summary>
-<p>
-1. Install dependencies as given above.
-2.
-</p>
-</details>
-
 
 <details><summary>Running tests</summary>
 <p>
 
 1. Ensure that you are in virtual environment
 2. Run all tests
+
 ```
 pytest
 ```
+
 3. Get coverage report
+
 ```
 pytest --cov=conference-planner
 ```
+
 </p>
 </details>
