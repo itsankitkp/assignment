@@ -88,5 +88,10 @@
         "Name": "User Interface CSS in Rails Apps",
         "Duration": 30,
         "isNetworking": false
+    },
+    {
+        "Name": "Networking Event",
+        "Duration": 60,
+        "isNetworking": true
     }
 ]

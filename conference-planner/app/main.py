@@ -1,5 +1,5 @@
 import json
-from planner.model import Plan
+from planner.model import Plan, ConferenceInfo
 from planner.generator import ConferencePlanner
 
 
@@ -17,10 +17,19 @@ def entrypoint(file_path: str) -> None:
     except IOError as e:
         print(f"Unable to read file due to {e}")
 
-    conference_data = json.loads(file_object.read())
-
-    planner = ConferencePlanner(conference_data=conference_data)
-    planner.allocate_morning_plan()
+    conference_json_data = json.loads(file_object.read())
+    conference_information = ConferenceInfo(conference_json_data)
+    data = conference_information.data
+    track=1
+    while len(data) != 0:
+        print(f'Track {track}')
+        print('-------------------------------------')
+        planner = ConferencePlanner(conference_information=data)
+        planned_events = planner.get_plan()
+        for event in planned_events:
+            print(event)
+        data = planner.get_conference_data()
+        track+=1
     # final_plan: Plan =
 
     # print(final_plan)
