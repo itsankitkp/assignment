@@ -1,7 +1,8 @@
 import json
 from os import path
-from planner.model import ConferenceInfo
+
 from planner.generator import ConferencePlanner
+from planner.model import ConferenceInfo
 
 
 def entrypoint(file_path: str) -> None:

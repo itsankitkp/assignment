@@ -1,7 +1,9 @@
 from dataclasses import dataclass
 from datetime import datetime
 from typing import List
-from planner.const import KEYWORD, SUPPORTED_KEYS
+
+from planner.const import KEYWORD
+from planner.const import SUPPORTED_KEYS
 
 
 class Specs:

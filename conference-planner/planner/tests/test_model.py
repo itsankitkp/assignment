@@ -1,6 +1,6 @@
+import pytest
 from planner.generator import ConferencePlanner
 from planner.model import ConferenceInfo
-import pytest
 
 
 class TestConferencePlannerModel:

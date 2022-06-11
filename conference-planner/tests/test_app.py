@@ -1,8 +1,9 @@
 import json
 import os
+
+from planner.const import PlannerConst
 from planner.generator import ConferencePlanner
 from planner.model import ConferenceInfo
-from planner.const import PlannerConst
 
 
 class TestApp:

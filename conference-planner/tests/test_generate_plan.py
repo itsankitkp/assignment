@@ -1,6 +1,6 @@
 import sys
-import pytest
 
+import pytest
 from generate_plan import main
 
 

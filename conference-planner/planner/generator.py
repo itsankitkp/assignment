@@ -1,6 +1,8 @@
 from datetime import timedelta
-from planner.model import Plan, Track
+
 from planner.const import PlannerConst
+from planner.model import Plan
+from planner.model import Track
 
 
 class ConferencePlanner:
