@@ -1,4 +1,5 @@
 from planner.model import Plan
 
-def generate_plan(conference_data: dict)->Plan:
-    pass
+
+def generate_plan(conference_data: dict) -> Plan:
+    return conference_data
