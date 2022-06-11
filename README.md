@@ -22,9 +22,9 @@ implemented and condition (as mentioned) is strictly followed.
 </p>
 <details><summary>Installing dependencies (Debian/Ubuntu or equivalent)</summary>
 <p>
-
-1. Download and install python3 from <https://www.python.org/downloads/> .
-2. Create a virtual environment.
+<ol>
+<li> Download and install python3 from <https://www.python.org/downloads/> . </li>
+<li> Create a virtual environment. </li>
 
 ```
 python3 -m venv venv
@@ -32,30 +32,33 @@ python3 -m venv venv
 
 Note: You may need to install `python3-venv` in some distros
 
-3. Activate virtual environment.
+<li> Activate virtual environment. </li>
 
 ```
 source venv/bin/activate
 ````
 
-4. Install Python dependencies.
+<li> Install Python dependencies. </li>
 
 ```
 pip install -r requirement.txt
 ```
 
+</ol>
 </p>
 </details>
 
 <details><summary>Running script</summary>
 <p>
-1. Ensure that you are in virtualenv
-2. Run following command:
+<ol>
+<li> Ensure that you are in virtualenv. </li>
+<li> Run following command: </li>
 
 ```
 python3 generate_plan.py <path_to_json_data>
 ```
 
+</ol>
 </p>
 </details>
 
@@ -76,19 +79,54 @@ or create your own using these files.
 
 <details><summary>Running tests</summary>
 <p>
-
-1. Ensure that you are in virtual environment
-2. Run all tests
+<ol>
+<li> Ensure that you are in virtual environment. </li>
+<li> Run all tests: </li>
 
 ```
 pytest
 ```
 
-3. Get coverage report
+<li> Get coverage report: </li>
 
 ```
 pytest --cov=conference-planner
 ```
 
+</ol>
+
+</p>
+</details>
+
+<details><summary>Using make to quickly run the demo</summary>
+<p>
+<ol>
+<li> Install make. </li>
+
+```
+sudo apt install make
+```
+
+<li> Run make command to get sample result. </li>
+
+```
+make
+```
+
+<li> Run make test to run tests. </li>
+
+```
+make test
+```
+
+<li> Run make cov to get coverage report. </li>
+
+```
+make cov
+```
+
+</old>
+Note: #3 and #4 create temperatory virtual environment. <br>
+If test fails then these environment are manually needed to be cleaned up.
 </p>
 </details>
