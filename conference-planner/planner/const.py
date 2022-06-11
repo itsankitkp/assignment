@@ -5,6 +5,12 @@ class KEYWORD:
     NAME = "Name"
     DURATION = "Duration"
     IS_NETWORKING = "isNetworking"
+    
+SUPPORTED_KEYS = [
+    (KEYWORD.NAME, str),
+    (KEYWORD.DURATION, int),
+    (KEYWORD.IS_NETWORKING, bool),
+]
 
 
 class PlannerConst:
