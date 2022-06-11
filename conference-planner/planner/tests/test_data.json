@@ -1,0 +1,97 @@
+[
+    {
+        "Name": "Writing Fast Tests Against Enterprise Rails",
+        "Duration": 60,
+        "isNetworking": false
+    },
+    {
+        "Name": "Overdoing it in Python",
+        "Duration": 45,
+        "isNetworking": false
+    },
+    {
+        "Name": "Lua for the Masses",
+        "Duration": 30,
+        "isNetworking": false
+    },
+    {
+        "Name": "Ruby Errors from Mismatched Gem Versions",
+        "Duration": 45,
+        "isNetworking": false
+    },
+    {
+        "Name": "Common Ruby Errors",
+        "Duration": 45,
+        "isNetworking": false
+    },
+    {
+        "Name": "Rails for Python Developers lightning Communicating Over Distance",
+        "Duration": 60,
+        "isNetworking": false
+    },
+    {
+        "Name": "Accounting-Driven Development",
+        "Duration": 45,
+        "isNetworking": false
+    },
+    {
+        "Name": "Woah",
+        "Duration": 30,
+        "isNetworking": false
+    },
+    {
+        "Name": "Sit Down and Write",
+        "Duration": 30,
+        "isNetworking": false
+    },
+    {
+        "Name": "Pair Programming vs Noise",
+        "Duration": 45,
+        "isNetworking": false
+    },    
+    {
+        "Name": "Rails Magic",
+        "Duration": 60,
+        "isNetworking": false
+    },
+    {
+        "Name": "Ruby on Rails: Why We Should Move On",
+        "Duration": 60,
+        "isNetworking": false
+    },
+    {
+        "Name": "Clojure Ate Scala (on my project)",
+        "Duration": 45,
+        "isNetworking": false
+    },
+    {
+        "Name": "Programming in the Boondocks of Seattle",
+        "Duration": 30,
+        "isNetworking": false
+    },
+    {
+        "Name": "Ruby vs. Clojure for Back-End Development",
+        "Duration": 30,
+        "isNetworking": false
+    },
+    {
+        "Name": "Ruby on Rails Legacy App Maintenance",
+        "Duration": 60,
+        "isNetworking": false
+    },
+    {
+        "Name": "A World Without HackerNews",
+        "Duration": 30,
+        "isNetworking": false
+    },
+    {
+        "Name": "User Interface CSS in Rails Apps",
+        "Duration": 30,
+        "isNetworking": false
+    },
+    {
+        "Name": "Networking Event",
+        "Duration": 60,
+        "isNetworking": true
+    }
+]
