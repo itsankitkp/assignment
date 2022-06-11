@@ -1,6 +1,6 @@
 import json
 from planner.model import Plan
-from planner.generator import generate_plan
+from planner.generator import ConferencePlanner
 
 
 def entrypoint(file_path: str) -> None:
@@ -19,6 +19,8 @@ def entrypoint(file_path: str) -> None:
 
     conference_data = json.loads(file_object.read())
 
-    final_plan: Plan = generate_plan(conference_data=conference_data)
+    planner = ConferencePlanner(conference_data=conference_data)
+    planner.allocate_morning_plan()
+    # final_plan: Plan =
 
-    print(final_plan)
+    # print(final_plan)

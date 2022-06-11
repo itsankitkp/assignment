@@ -4,7 +4,6 @@ import os
 from app.main import entrypoint
 
 if __name__ == "__main__":
-    print(sys.argv)
     if len(sys.argv) != 2:
         print(f"File path containing conference details are not specified")
         sys.exit(1)
