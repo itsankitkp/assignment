@@ -25,7 +25,13 @@ class Specs:
         self.duration = conf_data[KEYWORD.DURATION]
 
         if self.duration < 5:
+            # Talk duration should not be less than 5
             raise ValueError("Duration less than 5 is not supported")
+        # Do we have upper limit on duration ?
+
+        # Validate no number in track name
+        if any(char.isdigit() for char in self.name):
+            raise ValueError("Talk title can not contain number!")
 
         self.is_networking = conf_data[KEYWORD.IS_NETWORKING]
 
