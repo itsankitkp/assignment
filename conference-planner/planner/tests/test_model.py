@@ -1,5 +1,4 @@
 import pytest
-from planner.generator import ConferencePlanner
 from planner.model import ConferenceInfo
 
 
@@ -23,6 +22,13 @@ class TestConferencePlannerModel:
             {"Name": "Overdoing it in Python", "Duration": "45", "isNetworking": False}
         ]
         with pytest.raises(TypeError):
+            _ = ConferenceInfo(conference_json_data)
+
+    def test_model_title_having_numbers(self):
+        conference_json_data = [
+            {"Name": "Overdoing it in Python 1", "Duration": 45, "isNetworking": False}
+        ]
+        with pytest.raises(ValueError):
             _ = ConferenceInfo(conference_json_data)
 
     def test_model_validator_wrong_object(self):

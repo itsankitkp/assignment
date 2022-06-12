@@ -11,5 +11,7 @@ class TestGeneratePlan:
 
     def test_with_param_file(self):
         sys.argv = ["generate_plan.py", "./sample_data/sample1.json"]
-        with pytest.raises(Exception):
+        try:
             main()
+        except:
+            pytest.fail("Unexpected Error while running sample file")
