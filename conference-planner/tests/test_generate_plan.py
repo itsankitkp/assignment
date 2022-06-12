@@ -1,4 +1,5 @@
 import sys
+import os
 
 import pytest
 from generate_plan import main
@@ -10,7 +11,10 @@ class TestGeneratePlan:
             main()
 
     def test_with_param_file(self):
-        sys.argv = ["generate_plan.py", "./sample_data/sample1.json"]
+        sys.argv = [
+            "generate_plan.py",
+            f"{os.path.dirname(__file__)}/../sample_data/sample1.json",
+        ]
         try:
             main()
         except:
