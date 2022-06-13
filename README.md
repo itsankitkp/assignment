@@ -64,13 +64,14 @@ python3 generate_plan.py <path_to_json_data>
 
 <details><summary>Running sample data</summary>
 <p>
-1. Ensure that you are in virtualenv
-2. Run following command:
+<ol>
+<li> Ensure that you are in virtualenv. </li>
+<li> Run following command: </li>
 
 ```
 python3 generate_plan.py sample_data/sample1.json
 ```
-
+</ol>
 Choose different sample files: sample1.jsom, sample2.json, sample3.json
 or create your own using these files.
 
