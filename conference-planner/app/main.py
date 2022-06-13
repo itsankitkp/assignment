@@ -21,8 +21,13 @@ def entrypoint(file_path: str) -> None:
 
     conference_json_data: dict = json.loads(file_object.read())
     conference_information = ConferenceInfo(conference_json_data)
+    # extract parsed information
     data = conference_information.data
     track = 1
+
+    # This loop runs till all tracks are allocated.
+    # Each time planner is run, it can allocated from 9-5 only
+    # Hence, multiple passes are needed
     while len(data) != 0:
         print(f"Track {track}")
         print("-------------------------------------")
