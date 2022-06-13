@@ -21,6 +21,12 @@ class ConferencePlanner:
         self.planned_track: Plan = Plan(plan=[])
 
     def get_conference_data(self) -> List:
+        """
+        Return remaining tracks
+
+        Returns:
+            List: remaining tracks are general and networking tracks
+        """
         return self.general_tracks + self.networking_tracks
 
     def get_plan(self) -> Plan:

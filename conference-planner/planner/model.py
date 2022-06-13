@@ -36,9 +36,21 @@ class Specs:
         self.is_networking = conf_data[KEYWORD.IS_NETWORKING]
 
     def is_networking_track(self) -> bool:
+        """
+            Returns true if track is networking track
+
+        Returns:
+            bool: type of track
+        """
         return self.is_networking
 
     def __repr__(self) -> str:
+        """
+            Makes it easy to print object, mostly for debugging
+
+        Returns:
+            str: representation of object
+        """
         return f"{self.name} {self.duration}"
 
 
@@ -51,6 +63,10 @@ class ConferenceInfo:
 
 @dataclass
 class Track:
+    """
+    Stores information about tracks
+    """
+
     name: str
     start_time: datetime
     end_time: datetime
@@ -61,4 +77,8 @@ class Track:
 
 @dataclass
 class Plan:
+    """
+    Stores allocated Plan
+    """
+
     plan: List[Track]
